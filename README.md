@@ -183,3 +183,5 @@ In order to add a custom font file into your Mac app, do the following steps:
 5. Add a `ATSApplicationFontsPath` key to your ProjectName-Info.plist, with the value `Fonts` (or whatever you named the fonts folder in step 1)
 
 After you do the steps listed above, run `[[[NSFontManager sharedFontManager] availableFontFamilies] description]` to see the font family name to be used in your app.
+
+More info found at: http://stackoverflow.com/questions/2444717/embed-font-in-a-mac-bundle
