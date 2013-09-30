@@ -176,11 +176,11 @@ In order to access this programatically, use `[[[NSFontManager sharedFontManager
 
 ## Adding a custom font
 In order to add a custom font file into your Mac app, do the following steps:
-	1. Create a folder title Fonts in your main project folder, where all your classes are
-	2. Add the font file to your Xcode project by dragging it into Xcode from Finder
-	3. Add a new Copy File to your target. To do this: click on your target -> click on Add Build Phase -> click on Add Copy Files
-	4. Set the destination of the Copy Files build phase to Resources, with a path of Fonts (or whatever you named the fonts folder in step 1)
-	5. Add a `ATSApplicationFontsPath` key to your ProjectName-Info.plist, with the value `Fonts` (or whatever you named the fonts folder in step 1)
+1. Create a folder titled Fonts in your main project folder, where all your classes are
+2. Add the font file to your Xcode project by dragging it into Xcode from Finder
+3. Add a new Copy File to your target. To do this: click on your target -> click on Add Build Phase -> click on Add Copy Files
+4. Set the destination of the Copy Files build phase to Resources, with a path of Fonts (or whatever you named the fonts folder in step 1)
+5. Add a `ATSApplicationFontsPath` key to your ProjectName-Info.plist, with the value `Fonts` (or whatever you named the fonts folder in step 1)
 
 After you do the steps listed above, run `[[[NSFontManager sharedFontManager] availableFontFamilies] description]` to see the font family name to be used in your app.
 
